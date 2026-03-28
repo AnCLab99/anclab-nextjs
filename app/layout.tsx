@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: '/images/og/cover.jpg',
+        url: '/images/og/cover.png',
         width: 1200,
         height: 630,
         alt: 'AnC Lab.'

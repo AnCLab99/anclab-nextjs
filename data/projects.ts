@@ -73,7 +73,7 @@ export const projects: Project[] = [
     category: 'Presentation',
     summary: 'Refining a complex proposal into a clear, structured, and visually compelling presentation system.',
     insight: 'A presentation system built to communicate strategic thinking with clarity, structure, and a strong sense of professionalism.',
-    cover: '/images/projects/FCole/FCole.png',
+    cover: '/images/projects/FCole/Fcole.png',
     year: '2026',
     scope: ['Presentation', 'Typography direction', 'Color system'],
     context:
