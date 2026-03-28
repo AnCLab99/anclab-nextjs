@@ -1,3 +1,4 @@
+import { siteConfig } from './site';
 export type ProjectCategory = 'Brand Identity' | 'Presentation' | 'Illustration';
 
 export type Project = {
@@ -152,6 +153,6 @@ export const featuredProjects = projects.filter((project) => project.featured);
 export const latestBehance = projects.slice(0, 3).map((project) => ({
   title: project.title,
   category: project.category,
-  href: project.behance ?? '#',
+  href: siteConfig.behanceUrl,
   cover: project.cover
 }));
