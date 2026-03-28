@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     template: `%s — ${siteConfig.name}`
   },
   description: siteConfig.description,
-  metadataBase: new URL('https://anclab.netlify.app'),
+  metadataBase: new URL('https://anclab-nextjs.vercel.app/'),
   openGraph: {
     title: `${siteConfig.name} — Boutique Design Partner`,
     description: siteConfig.description,
-    url: 'https://anclab.netlify.app',
+    url: 'https://anclab-nextjs.vercel.app/',
     siteName: siteConfig.name,
     images: [
       {
