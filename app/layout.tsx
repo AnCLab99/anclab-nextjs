@@ -1,50 +1,47 @@
 import type { Metadata } from 'next';
-import './globals.css';
-import { Navbar } from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
-import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://anclab-nextjs.vercel.app'),
+
   title: {
-    default: `${siteConfig.name} — Boutique Design Partner`,
-    template: `%s — ${siteConfig.name}`
+    default: 'AnC Lab. — Boutique Design Partner',
+    template: '%s — AnC Lab.',
   },
-  description: siteConfig.description,
-  metadataBase: new URL('https://anclab-nextjs.vercel.app/'),
+
+  description: 'A boutique design partner for builders who value clarity.',
+
+  icons: {
+    icon: [
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', sizes: '16x16', type: 'image/png' }
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
+    ],
+    shortcut: ['/icon.png'],
+  },
+
   openGraph: {
-    title: `${siteConfig.name} — Boutique Design Partner`,
-    description: siteConfig.description,
-    url: 'https://anclab-nextjs.vercel.app/',
-    siteName: siteConfig.name,
+    title: 'AnC Lab. — Boutique Design Partner',
+    description: 'A boutique design partner for builders who value clarity.',
+    url: 'https://anclab-nextjs.vercel.app',
+    siteName: 'AnC Lab.',
     images: [
       {
         url: '/images/og/cover.png',
         width: 1200,
         height: 630,
-        alt: 'AnC Lab.'
-      }
+        alt: 'AnC Lab.',
+      },
     ],
     locale: 'en_US',
-    type: 'website'
+    type: 'website',
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} — Boutique Design Partner`,
-    description: siteConfig.description,
-    images: ['/images/og/cover.png']
-  }
+    title: 'AnC Lab. — Boutique Design Partner',
+    description: 'A boutique design partner for builders who value clarity.',
+    images: ['/images/og/cover.png'],
+  },
 };
-
-export default function RootLayout({
-  children
-}: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en">
-      <body className="font-sans antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
-}
