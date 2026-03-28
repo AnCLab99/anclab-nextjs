@@ -1,4 +1,5 @@
 import { siteConfig } from './site';
+
 export type ProjectCategory = 'Brand Identity' | 'Presentation' | 'Illustration';
 
 export type Project = {
@@ -132,10 +133,10 @@ export const projects: Project[] = [
     scope: ['Illustration', 'Visual story', 'Blend of styles'],
     context:
       'This illustration was built based on a structured brief that defined character roles, setting, and interaction dynamics. The scene combines three distinct characters: a semi-realistic security figure and two anime-style shrine maidens, placed within a shrine environment to create a narrative moment.',
-    challenge: 
+    challenge:
       'The key challenge was stylistic integration. Bringing together semi-realistic and anime characters in one frame—while maintaining visual consistency—required careful control of lighting, proportion, and rendering approach. Additionally, the composition needed to communicate a subtle story: a casual interaction between characters from different contexts.',
     direction:
-      'The direction focused on narrative balance. Instead of forcing uniformity, the illustration embraces stylistic contrast—while unifying everything through: Warm ambient lighting (morning shrine atmosphere); Consistent shadow behavior; Controlled color harmony across characters and environment; The composition was designed to feel conversational and approachable, aligning with the “friendly encounter” scenario described in the brief.',
+      'The direction focused on narrative balance. Instead of forcing uniformity, the illustration embraces stylistic contrast—while unifying everything through: Warm ambient lighting (morning shrine atmosphere); Consistent shadow behavior; Controlled color harmony across characters and environment; The composition was designed to feel conversational and approachable, aligning with the friendly encounter scenario described in the brief.',
     execution: [
       'Interpreted structured brief into a single cohesive scene',
       'Balanced semi-realistic and anime rendering styles through lighting and color harmony',
@@ -144,6 +145,33 @@ export const projects: Project[] = [
     ],
     result:
       'The final illustration successfully merges different visual styles into a cohesive scene that tells a subtle story. The interaction between characters feels natural, and the overall piece demonstrates how contrasting styles can coexist harmoniously when guided by strong narrative and visual principles.',
+    featured: true
+  },
+  {
+    slug: 'deepsleep',
+    title: 'Deep Sleep',
+    category: 'Illustration',
+    summary: 'A personal illustration exploring the boundary between consciousness and the subconscious mind.',
+    insight: 'Dreams are not passive experiences—they are constructed realities shaped by memory, emotion, and abstraction. This piece visualizes that moment where control fades and the mind begins to drift.',
+    cover: '/images/projects/Deepsleep/Deepsleep.png',
+    year: '2024',
+    scope: ['Illustration', 'Visual story', 'Abstract representation'],
+    context:
+      'This personal project was created as an exploration of surreal visual storytelling. The focus was to depict a state between sleep and awareness—where the body rests, but the mind remains active and fluid.',
+    challenge:
+      'The main challenge was translating an abstract concept into a clear visual. How to represent something intangible—like dreams—without relying on literal storytelling, while still maintaining emotional clarity.',
+    direction:
+      'The direction focused on immersive surrealism. A floating figure becomes the anchor, surrounded by symbolic elements that represent fragmented thoughts, uncertainty, and subconscious activity.',
+    execution: [
+      'Built a dynamic composition centered on a floating character',
+      'Used swirling motion to simulate a dream-like environment',
+      'Applied neon blue and violet tones to create a surreal atmosphere',
+      'Integrated abstract objects (cubes, symbols) to represent fragmented thoughts',
+      'Used lighting as a narrative tool to guide focus and depth',
+      'Blended soft and sharp edges to enhance the sense of transition between reality and dream'
+    ],
+    result:
+      'The final piece creates an immersive and introspective visual experience. It captures a moment of suspension—where reality dissolves, and the subconscious takes over—resulting in a composition that feels both calm and disorienting.',
     featured: true
   }
 ];
