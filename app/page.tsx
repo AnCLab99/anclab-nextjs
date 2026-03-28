@@ -7,6 +7,7 @@ import { PortfolioCard } from '@/components/PortfolioCard';
 import { ProcessStep } from '@/components/ProcessStep';
 import { BehanceCard } from '@/components/BehanceCard';
 import { featuredProjects, latestBehance } from '@/data/projects';
+import { siteConfig } from '@/data/site';
 
 export default function HomePage() {
   return (
@@ -225,9 +226,12 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="mt-10">
-            <Button href="https://www.behance.net/" variant="secondary">
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <Button href={siteConfig.behanceUrl} variant="secondary">
               Visit Behance
+            </Button>
+            <Button href={siteConfig.instagramUrl} variant="secondary">
+              Visit Instagram
             </Button>
           </div>
         </Container>
