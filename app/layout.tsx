@@ -1,4 +1,9 @@
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import './globals.css';
+
+import { Navbar } from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://anclab-nextjs.vercel.app'),
@@ -13,11 +18,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/icon.png', sizes: '32x32', type: 'image/png' },
-      { url: '/icon.png', sizes: '16x16', type: 'image/png' }
+      { url: '/icon.png', sizes: '16x16', type: 'image/png' },
     ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }
-    ],
+    apple: [{ url: '/apple-icon.png', sizes: '180x180', type: 'image/png' }],
     shortcut: ['/icon.png'],
   },
 
@@ -45,3 +48,19 @@ export const metadata: Metadata = {
     images: ['/images/og/cover.png'],
   },
 };
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="font-sans antialiased">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
