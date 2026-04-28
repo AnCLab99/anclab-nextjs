@@ -37,9 +37,7 @@ export default function ContactPage() {
             <label className="grid gap-2 text-sm font-medium text-body">
               Budget Range
               <select className="rounded-xl border border-line bg-white px-4 py-3 text-base text-ink outline-none transition focus:border-brand-primary">
-                <option>$100–$300</option>
-                <option>$300–$800</option>
-                <option>$800+</option>
+                <option>pay as much as you want</option>
               </select>
             </label>
             <label className="grid gap-2 text-sm font-medium text-body">
